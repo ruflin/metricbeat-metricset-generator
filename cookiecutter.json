@@ -1,0 +1,9 @@
+{
+  "module_name": "Example",
+  "metricset_name": "Example",
+  "project_name": "Examplebeat",
+  "github_name": "your-github-name",
+  "module": "{{ cookiecutter.project_name|lower }}",
+  "beat_path": "github.com/{{ cookiecutter.github_name|lower }}",
+  "full_name": "Firstname Lastname"
+}
