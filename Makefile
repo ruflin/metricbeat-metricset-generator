@@ -10,18 +10,17 @@ test: python-env
 	cp tests/cookiecutter.json build/
 	. ${PYTHON_ENV}/bin/activate; \
 	cookiecutter --no-input -o build/src/beatpath -f  build ; \
-	cd build/src/beatpath/testbeat ; \
+	cd build/src/beatpath/countbeat ; \
 	export GOPATH=${PWD}/build ; \
-	export GO15VENDOREXPERIMENT=1; \
 	export PATH=${PATH}:${PWD}/build/bin; \
 	make init ; \
 	make check ; \
-	make ; \
-	make testsuite ; \
-	cd dev-tools/packer ; \
-	make deps ; \
-	make images ; \
 	make
+	#make testsuite ; \
+	#cd dev-tools/packer ; \
+	#make deps ; \
+	#make images ; \
+	#make
 
 # Sets up the virtual python environment
 .PHONY: python-env

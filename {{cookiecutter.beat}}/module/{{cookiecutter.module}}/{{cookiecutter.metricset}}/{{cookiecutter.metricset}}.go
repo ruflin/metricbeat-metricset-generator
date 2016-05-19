@@ -1,4 +1,4 @@
-package {{cookiecutter.metricset_name}}
+package {{cookiecutter.metricset}}
 
 import (
 	"github.com/elastic/beats/libbeat/common"
@@ -6,12 +6,12 @@ import (
 )
 
 func init() {
-	if err := mb.Registry.AddMetricSet("{{cookiecutter.module_name}}", "{{cookiecutter.metricset_name}}", New); err != nil {
+	if err := mb.Registry.AddMetricSet("{{cookiecutter.module}}", "{{cookiecutter.metricset}}", New); err != nil {
 		panic(err)
 	}
 }
 
-type MetricSet struct{
+type MetricSet struct {
 	mb.BaseMetricSet
 	counter int64
 }

@@ -1,5 +1,5 @@
-BEATNAME={{cookiecutter.project_name}}
-BEAT_DIR=github.com/ruflin
+BEATNAME={{cookiecutter.beat}}
+BEAT_DIR={{cookiecutter.beat_path}}
 SYSTEM_TESTS=false
 TEST_ENVIRONMENT=false
 ES_BEATS=./vendor/github.com/elastic/beats
@@ -12,8 +12,9 @@ PREFIX?=.
 .PHONY: init
 init:
 	glide update  --no-recursive
-	make update
+	make collect
 	git init
+
 
 .PHONY: commit
 commit:

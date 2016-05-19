@@ -1,4 +1,0 @@
-- module: {{cookiecutter.module_name}}
-  metricsets: ["{{cookiecutter.metricset_name}}"]
-  enabled: true
-  period: 1s

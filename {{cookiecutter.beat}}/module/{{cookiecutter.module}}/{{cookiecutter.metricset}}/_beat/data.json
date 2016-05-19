@@ -4,8 +4,8 @@
     "hostname": "ruflin",
     "name": "ruflin"
   },
-  "{{cookiecutter.module_name}}": {
-    "{{cookiecutter.metricset_name}}": {
+  "{{cookiecutter.module}}": {
+    "{{cookiecutter.metricset}}": {
       "counter": 2
     }
   },

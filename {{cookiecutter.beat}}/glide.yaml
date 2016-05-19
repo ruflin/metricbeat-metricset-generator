@@ -1,4 +1,4 @@
-package: github.com/ruflin/df2beat
+package: .
 import:
 - package: github.com/elastic/beats
   version: f2edd9293c414034f3ba963a6e620ac433493534
