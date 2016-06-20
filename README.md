@@ -1,3 +1,5 @@
+DEPRECATED: Please use the metricset generator in the beats repository: https://github.com/elastic/beats/tree/master/generate/metricbeat/metricset
+
 This generator makes it possible to generate your own beat in seconds and build up on it.
 
 
